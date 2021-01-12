@@ -5,6 +5,32 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@media (min-width: 768px){
+  .navbar-nav{
+      float:none;
+      margin: 0 auto;
+      display: table;
+      table-layout: fixed;
+  }
+}
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 380px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery  h3 {
+  text-align: center;
+}
+
+
 /* =======================================================
 *
 * 	Template Style 
@@ -828,6 +854,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 400;
   padding-left: 50px;
   padding-right: 50px;
+  box-shadow: 0 2px #999;
 }
 
 .fh5co-blog {
@@ -1068,6 +1095,43 @@ input[type="text"] {
   }
 }
 
+.comment {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.comment.active {
+  opacity: 1;
+  visibility: visible;
+}
+.comment a {
+  width: 50px;
+  height: 50px;
+  display: table;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.comment a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.comment a:hover, .comment a:active, .comment a:focus {
+  text-decoration: none;
+  outline: none;
+}
+/*===============================================================*/
 .gototop {
   position: fixed;
   bottom: 20px;
