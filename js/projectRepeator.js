@@ -146,9 +146,16 @@ document.getElementById("section-works").innerHTML = `
                     `
                 }).join(' ')}
 				
+            </div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <p> <br> <br>
+                        <a target="_blank" href="https://jd-christo.itch.io/" class="btn btn-default btn-lg">More at Itch.io</a>
+					</p>
+				</div>
 			</div>
 		</div>
-	</div>
+	</div>s
 `
 document.getElementById("section-labs").innerHTML = `
     ${labData.map(function(project){
