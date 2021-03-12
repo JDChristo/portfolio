@@ -55,11 +55,15 @@
   background: linear-gradient(to top, transparent, #fff 25%, #fff 25%);
   transition: 0.3s;
 }
-.cards .card:hover,
-.cards .card:focus,
-.cards .card:active{
+.work-cards .cards .card:hover,
+.work-cards .cards .card:focus,
+.work-cards .cards .card:active{
   box-shadow: 0 8px 16px 3px rgba(0,0,0,0.6);
   transform: translateY(-3px) scale(1.05) rotateX(15deg);
+}
+.work-cards:hover .cards > .card:not(:hover){
+  filter: blur(5px);
+  opacity: 40%;
 }
 .cards .card:hover figcaption,
 .cards .card:focus figcaption,

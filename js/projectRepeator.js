@@ -131,7 +131,7 @@ document.getElementById("section-works").innerHTML = `
 					<h2>Work</h2>
 				</div>
             </div>
-            <div class="row">
+            <div class="row work-cards">
                 ${projectData.map(function (project) {
     if (project.projectType === "Unity") {
         return `
