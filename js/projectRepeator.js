@@ -135,15 +135,16 @@ document.getElementById("section-works").innerHTML = `
                 ${projectData.map(function (project) {
     if (project.projectType === "Unity") {
         return `
-                    <div class="col-md-3 text-center col-padding animate-box">
-					<a target="_blank" href="${project.projectLink}" class="work" style="background-image: url(${project.imageSrc});">
-						<div class="desc">
-                            <h3>${project.projectName}</h3>
-                            <p>${project.description}</p>
-							<span>${project.projectType}</span>
-						</div>
-					</a>
-				    </div>
+                    <div class="col-md-3 col-padding animate-box">
+                    <div class="cards">
+				    <figure class="card">
+                    <a target="_blank" href="${project.projectLink}">
+					<img src="${project.imageSrc}" />
+					<figcaption>${project.projectName}</figcaption>
+                    </a>
+				    </figure>
+			        </div>
+			        </div>
                     `
     }
     else {
