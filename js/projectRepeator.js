@@ -8,70 +8,70 @@ const projectData = [
     },
     {
         projectName : "Keanu",
-        projectType : "Game",
+        projectType : "Unity",
         imageSrc    : "images/app/keanu.png",
         projectLink : "https://jd-christo.itch.io/keanu",
         description : " Keanu is a cube lost in unknown space. Help him in his journey through this musical puzzle game"
     },
     {
         projectName : "GEHENNA",
-        projectType : "Game",
+        projectType : "Unity",
         imageSrc    : "images/app/geh.png",
         projectLink : "https://jd-christo.itch.io/",
         description : "Open World Survival, Worked on - Player Controller - NPC Manager - NPC Crowd System - Crafting System - UI System - Art & Animation"
     },
     {
         projectName : "Basic 3",
-        projectType : "Game",
+        projectType : "Unity",
         imageSrc    : "images/app/tile_2.png",
         projectLink : "http://jd-christo.itch.io/basic-3",
         description : " Combine The Tiles And Eat Them, But Look Out For Void. Merge and feed on number blocks and increase your score."
     },
     {
         projectName : "Dot in Black and White",
-        projectType : "Game",
+        projectType : "Unity",
         imageSrc    : "images/app/Tile.png",
         projectLink : "https://jd-christo.itch.io/dot",
         description : " Jump and float your way through dangerous black and white platform in this rhythmic platform game. Prepare for almost impossible challenges."
     },
     {
         projectName : "Missile",
-        projectType : "Game",
+        projectType : "Unity",
         imageSrc    : "images/app/icon.jpg",
         projectLink : "https://jd-christo.itch.io/missile-game",
         description : " Missile is a clone game of same name - Missile! "
     },
     {
         projectName : "Squashy Traffic",
-        projectType : "Game",
+        projectType : "Unity",
         imageSrc    : "images/app/ve.png",
         projectLink : "https://jd-christo.itch.io/squash",
         description : " This is a game about managing a Road Junction by controlling the traffic lights. You can use coins to repair damaged traffic lights when they need maintenance. "
     },
     {
         projectName : "Ar Earth Project",
-        projectType : "Game",
+        projectType : "Unity",
         imageSrc    : "images/app/ear.png",
         projectLink : "https://jd-christo.itch.io/ar-earth",
         description : " Marker based AR Project. Download Target png. "
     },
     {
         projectName : "Simple Chess",
-        projectType : "Game",
+        projectType : "Unity",
         imageSrc    : "images/app/Chessboard.png",
         projectLink : "https://jd-christo.itch.io/simple-chess",
         description : " Its Chess. "
     },
     {
         projectName : "Runner",
-        projectType : "Game",
+        projectType : "Unity",
         imageSrc    : "images/app/run.png",
         projectLink : "https://jd-christo.itch.io/runner-demo",
         description : " A hyper-casual game. Jump to the higher stage  and don't fall. Jump using Mouse Button or Tap for android. The Game in development state. "
     },
     {
         projectName : "Little Explorer",
-        projectType : "Game",
+        projectType : "Unity",
         imageSrc    : "images/app/ex.png",
         projectLink : "https://jd-christo.itch.io/little-explorer",
         description : " A small gravity physics game. Control and Explore to collect stars "
@@ -133,6 +133,7 @@ document.getElementById("section-works").innerHTML = `
             </div>
             <div class="row">
                 ${projectData.map(function(project){
+                    if(project.projectType === "Unity"){
                     return`
                     <div class="col-md-3 text-center col-padding animate-box">
 					<a target="_blank" href="${project.projectLink}" class="work" style="background-image: url(${project.imageSrc});">
@@ -144,7 +145,11 @@ document.getElementById("section-works").innerHTML = `
 					</a>
 				    </div>
                     `
-                }).join(' ')}
+                }
+                else{
+                    return
+                }
+            }).join(' ')}
 				
             </div>
 			<div class="row animate-box">
