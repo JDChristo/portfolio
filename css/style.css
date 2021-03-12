@@ -312,7 +312,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-work,
-#fh5co-resume {
+#fh5co-resume,
+#fh5co-art {
   background: #2b2b2b;
 }
 
@@ -322,6 +323,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-started,
 #fh5co-work,
 #fh5co-blog,
+#fh5co-art,
 #fh5co-pricing,
 #fh5co-contact {
   padding: 7em 0;
@@ -333,6 +335,7 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-skills,
   #fh5co-started,
   #fh5co-work,
+  #fh5co-art,
   #fh5co-blog,
   #fh5co-pricing,
   #fh5co-contact {
@@ -855,6 +858,17 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-left: 50px;
   padding-right: 50px;
   box-shadow: 0 2px #999;
+}
+
+.fh5co-art {
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-art {
+    width: 100%;
+  }
 }
 
 .fh5co-blog {
