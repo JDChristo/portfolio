@@ -1,7 +1,7 @@
 const projectData = [
     {
         projectName: "Design Patterns",
-        projectType: "Study",
+        projectType: "Study, C#",
         imageSrc: "images/app/dp.jpg",
         projectLink: "https://github.com/JDChristo/Design-Pattern-in-c-sharp",
         description: " Git Repo for Design Patterns "
@@ -75,6 +75,20 @@ const projectData = [
         imageSrc: "images/app/ex.png",
         projectLink: "https://jd-christo.itch.io/little-explorer",
         description: " A small gravity physics game. Control and Explore to collect stars "
+    },
+    {
+        projectName: "Tic Tac Toe",
+        projectType: "C#",
+        imageSrc: "images/app/ttt.png",
+        projectLink: "https://jd-christo.itch.io/tictactoe",
+        description: " Simple tic tac toe game made using c#"
+    },
+    {
+        projectName: "JD Template",
+        projectType: "Unity, C#, Tool",
+        imageSrc: "images/portfolio-1.jpg",
+        projectLink: "https://jd-christo.itch.io/",
+        description: "Starter Template"
     }
 ];
 const labData = [
@@ -128,7 +142,7 @@ document.getElementById("section-works").innerHTML = `
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading-white">
-					<h2>Work</h2>
+					<h2>Unity</h2>
 				</div>
             </div>
             <div class="row work-cards">
@@ -140,7 +154,38 @@ document.getElementById("section-works").innerHTML = `
 				    <figure class="card">
                     <a target="_blank" href="${project.projectLink}">
 					<img src="${project.imageSrc}" />
-					<figcaption>${project.projectName}</figcaption>
+					<figcaption>${project.projectName} <p>${project.projectType} </p> </figcaption>
+                    </a>
+				    </figure>
+			        </div>
+			        </div>
+                    `
+    }
+}).join(' ')}
+				
+            </div>
+		</div>
+	</div>
+`
+document.getElementById("section-others").innerHTML = `
+
+<div id="fh5co-work" class="fh5co-bg-dark">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading-white">
+					<h2>Others</h2>
+				</div>
+            </div>
+            <div class="row work-cards">
+                ${projectData.map(function (project) {
+    if (project.projectType !== "Unity") {
+        return `
+                    <div class="col-md-3 col-padding animate-box">
+                    <div class="cards">
+				    <figure class="card">
+                    <a target="_blank" href="${project.projectLink}">
+					<img src="${project.imageSrc}" />
+					<figcaption>${project.projectName} <p>${project.projectType} </p> </figcaption>
                     </a>
 				    </figure>
 			        </div>
