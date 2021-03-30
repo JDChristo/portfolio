@@ -61,7 +61,7 @@
   }
   
   .card-grid:hover > .card:not(:hover) .card-bg{
-    filter: brightness(0.8) saturate(0.8) contrast(1.2) blur(8px);
+    filter: brightness(0.8);
   }
   
   .card-col{

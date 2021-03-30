@@ -67,8 +67,7 @@
   transform: translateY(-3px) scale(1.05) rotateX(15deg);
 }
 .work-cards:hover .cards > .card:not(:hover){
-  filter: blur(2px);
-  opacity: 80%;
+  filter: brightness(0.8);
 }
 .cards .card:hover figcaption,
 .cards .card:focus figcaption,
