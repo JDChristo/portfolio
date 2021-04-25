@@ -7,78 +7,92 @@ const projectData = [
         description: " Git Repo for Design Patterns "
     },
     {
+        projectName: "Tanks War",
+        projectType: "Phaser 3, JS, Html, CSS",
+        imageSrc: "images/app/tank.png",
+        projectLink: "https://jd-christo.itch.io/tanks-war",
+        description: "Simple tank war game made using phaser 3"
+    },
+    {
+        projectName: "Pong AI",
+        projectType: "Love2D, Lua, AI",
+        imageSrc: "images/app/pong.png",
+        projectLink: "https://jd-christo.itch.io/pong-ai",
+        description: "Pong with ai"
+    },
+    {
         projectName: "Keanu",
-        projectType: "Unity",
+        projectType: "Unity, C#",
         imageSrc: "images/app/keanu.png",
         projectLink: "https://jd-christo.itch.io/keanu",
         description: " Keanu is a cube lost in unknown space. Help him in his journey through this musical puzzle game"
     },
     {
         projectName: "GEHENNA",
-        projectType: "Unity",
+        projectType: "Unity, C#",
         imageSrc: "images/app/geh.png",
         projectLink: "https://jd-christo.itch.io/",
         description: "Open World Survival, Worked on - Player Controller - NPC Manager - NPC Crowd System - Crafting System - UI System - Art & Animation"
     },
     {
         projectName: "Basic 3",
-        projectType: "Unity",
+        projectType: "Unity, C#",
         imageSrc: "images/app/tile_2.png",
         projectLink: "http://jd-christo.itch.io/basic-3",
         description: " Combine The Tiles And Eat Them, But Look Out For Void. Merge and feed on number blocks and increase your score."
     },
     {
         projectName: "Dot in Black and White",
-        projectType: "Unity",
+        projectType: "Unity, C#",
         imageSrc: "images/app/Tile.png",
         projectLink: "https://jd-christo.itch.io/dot",
         description: " Jump and float your way through dangerous black and white platform in this rhythmic platform game. Prepare for almost impossible challenges."
     },
     {
         projectName: "Missile",
-        projectType: "Unity",
+        projectType: "Unity, C#",
         imageSrc: "images/app/icon.jpg",
         projectLink: "https://jd-christo.itch.io/missile-game",
         description: " Missile is a clone game of same name - Missile! "
     },
     {
         projectName: "Squashy Traffic",
-        projectType: "Unity",
+        projectType: "Unity, C#",
         imageSrc: "images/app/ve.png",
         projectLink: "https://jd-christo.itch.io/squash",
         description: " This is a game about managing a Road Junction by controlling the traffic lights. You can use coins to repair damaged traffic lights when they need maintenance. "
     },
     {
         projectName: "Ar Earth Project",
-        projectType: "Unity",
+        projectType: "Unity, C#",
         imageSrc: "images/app/ear.png",
         projectLink: "https://jd-christo.itch.io/ar-earth",
         description: " Marker based AR Project. Download Target png. "
     },
     {
         projectName: "Simple Chess",
-        projectType: "Unity",
+        projectType: "Unity, C#",
         imageSrc: "images/app/Chessboard.png",
         projectLink: "https://jd-christo.itch.io/simple-chess",
         description: " Its Chess. "
     },
     {
         projectName: "Runner",
-        projectType: "Unity",
+        projectType: "Unity, C#",
         imageSrc: "images/app/run.png",
         projectLink: "https://jd-christo.itch.io/runner-demo",
         description: " A hyper-casual game. Jump to the higher stage  and don't fall. Jump using Mouse Button or Tap for android. The Game in development state. "
     },
     {
         projectName: "Little Explorer",
-        projectType: "Unity",
+        projectType: "Unity, C#",
         imageSrc: "images/app/ex.png",
         projectLink: "https://jd-christo.itch.io/little-explorer",
         description: " A small gravity physics game. Control and Explore to collect stars "
     },
     {
         projectName: "Tic Tac Toe",
-        projectType: "C#",
+        projectType: "C#, WPF",
         imageSrc: "images/app/ttt.png",
         projectLink: "https://jd-christo.itch.io/tictactoe",
         description: " Simple tic tac toe game made using c#"
@@ -142,12 +156,12 @@ document.getElementById("section-works").innerHTML = `
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading-white">
-					<h2>Unity</h2>
+					<h2>Made with Unity</h2>
 				</div>
             </div>
             <div class="row work-cards">
                 ${projectData.map(function (project) {
-    if (project.projectType === "Unity") {
+    if (project.projectType == "Unity, C#") {
         return `
                     <div class="col-md-3 col-padding animate-box">
                     <div class="cards">
@@ -178,7 +192,7 @@ document.getElementById("section-others").innerHTML = `
             </div>
             <div class="row work-cards">
                 ${projectData.map(function (project) {
-    if (project.projectType !== "Unity") {
+    if (project.projectType !== "Unity, C#") {
         return `
                     <div class="col-md-3 col-padding animate-box">
                     <div class="cards">
