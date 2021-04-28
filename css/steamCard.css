@@ -8,20 +8,18 @@
 }
 .cards{
   display: flex;
-}
-.cards{
   flex-flow: row wrap;
 }
 .cards .card{
-  margin: 5px;
+  margin: 7px;
   width: 270px;
-  height: 270px;
+  height: 300px;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0,0,0,0.8);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  border-radius: 20px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
   transform-origin: center top;
   transform-style: preserve-3d;
   transform: translateZ(0);
@@ -29,25 +27,72 @@
 }
 .cards .card img{
   width: 100%;
-  min-height: 100%;
+  min-height: 70%;
 }
 .cards .card figcaption{
+  top : 70%;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 20px;
   padding-bottom: 10px;
   font-size: 15px;
-  background: rgb(255, 246, 246);
-  color: #FF9000;
-  transform: translateY(100%);
-  transition: 0.3s;
+  background: #000000;
+  color: #ff9100;
+  transition: 0.5s;
 }
 
 .cards .card figcaption p{
-  
-  color: #070707;
+  text-align:left;
+  line-height: 20px;
+  color: #ffffff;
 }
+.cards .card figcaption button{
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #ff9100;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  letter-spacing: 1.1;
+}
+
+.cards .card figcaption button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.cards .card figcaption button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+
+.cards .card figcaption button:hover span {
+  padding-right: 25px;
+}
+
+.cards .card figcaption button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.cards .card figcaption button:active {
+  background-color: #F9D023;
+}
+
 .cards .card:after{
   content: '';
   z-index: 10;
@@ -72,7 +117,8 @@
 .cards .card:hover figcaption,
 .cards .card:focus figcaption,
 .cards .card:active figcaption{
-  top : 70%;
+  top : 0%;
+  bottom: 0;
   transform: none;
 }
 .cards .card:hover:after,

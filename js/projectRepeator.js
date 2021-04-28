@@ -18,7 +18,7 @@ const projectData = [
         projectType: "Love2D, Lua, AI",
         imageSrc: "images/app/pong.png",
         projectLink: "https://jd-christo.itch.io/pong-ai",
-        description: "Pong with ai"
+        description: "Pong with ai. Made with love2d engine"
     },
     {
         projectName: "Keanu",
@@ -32,7 +32,7 @@ const projectData = [
         projectType: "Unity, C#",
         imageSrc: "images/app/geh.png",
         projectLink: "https://jd-christo.itch.io/",
-        description: "Open World Survival, Worked on - Player Controller - NPC Manager - NPC Crowd System - Crafting System - UI System - Art & Animation"
+        description: "Open World Survival, Player Controller, NPC Manager, NPC Crowd System, Crafting System, UI System, Art & Animation"
     },
     {
         projectName: "Basic 3",
@@ -60,7 +60,7 @@ const projectData = [
         projectType: "Unity, C#",
         imageSrc: "images/app/ve.png",
         projectLink: "https://jd-christo.itch.io/squash",
-        description: " This is a game about managing a Road Junction by controlling the traffic lights. You can use coins to repair damaged traffic lights when they need maintenance. "
+        description: " Manage Road Junction by controlling the traffic lights. You can use coins to repair damaged traffic lights when they need maintenance. "
     },
     {
         projectName: "Ar Earth Project",
@@ -81,7 +81,7 @@ const projectData = [
         projectType: "Unity, C#",
         imageSrc: "images/app/run.png",
         projectLink: "https://jd-christo.itch.io/runner-demo",
-        description: " A hyper-casual game. Jump to the higher stage  and don't fall. Jump using Mouse Button or Tap for android. The Game in development state. "
+        description: " A hyper-casual game. Jump to the higher stage. Jump using Mouse Button or Tap for android. The Game in development state. "
     },
     {
         projectName: "Little Explorer",
@@ -95,7 +95,7 @@ const projectData = [
         projectType: "C#, WPF",
         imageSrc: "images/app/ttt.png",
         projectLink: "https://jd-christo.itch.io/tictactoe",
-        description: " Simple tic tac toe game made using c#"
+        description: " Simple tic tac toe game made using c# and WPF"
     },
     {
         projectName: "JD Template",
@@ -166,10 +166,15 @@ document.getElementById("section-works").innerHTML = `
                     <div class="col-md-3 col-padding animate-box">
                     <div class="cards">
 				    <figure class="card">
-                    <a target="_blank" href="${project.projectLink}">
+                    
 					<img src="${project.imageSrc}" />
-					<figcaption>${project.projectName} <p>${project.projectType} </p> </figcaption>
+					<figcaption>${project.projectName} 
+                    <p>${project.projectType} </p>
+                    <p>${project.description} </p>
+                    <a target="_blank" href="${project.projectLink}">
+                    <button><span>Play</span></button>
                     </a>
+                    </figcaption>
 				    </figure>
 			        </div>
 			        </div>
@@ -197,10 +202,15 @@ document.getElementById("section-others").innerHTML = `
                     <div class="col-md-3 col-padding animate-box">
                     <div class="cards">
 				    <figure class="card">
-                    <a target="_blank" href="${project.projectLink}">
 					<img src="${project.imageSrc}" />
-					<figcaption>${project.projectName} <p>${project.projectType} </p> </figcaption>
+					
+					<figcaption>${project.projectName} 
+                    <p>${project.projectType} </p>
+                    <p>${project.description} </p>
+                    <a target="_blank" href="${project.projectLink}">
+                    <button><span>Play</span></button>
                     </a>
+                    </figcaption>
 				    </figure>
 			        </div>
 			        </div>

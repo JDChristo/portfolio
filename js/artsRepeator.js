@@ -1,94 +1,101 @@
 const arts = [
     {
         name: "JD",
-        icon: "images/art/n2.jpg",
-        image: "images/art/n2.jpg"
+        image: "images/art/1.jpg"
     },
     {
         name: "Portrait",
-        icon: "images/art/n2.jpg",
-        image: "images/art/draw.jpg"
+        image: "images/art/2.jpg"
     },
     {
         name: "Rehan",
+        image: "images/art/3.jpg"
+    },
+    {
+        name: "Pixel",
         icon: "images/art/n2.jpg",
-        image: "images/art/Rahen_nep.jpg"
+        image: "images/art/4.png"
     },
     {
         name: "Austrich",
         icon: "images/art/n2.jpg",
-        image: "images/art/Main.png"
+        image: "images/art/5.png"
     },
     {
         name: "Yaffelo",
         icon: "images/art/n2.jpg",
-        image: "images/art/main1.png"
+        image: "images/art/6.png"
     },
     {
         name: "Phip",
         icon: "images/art/n2.jpg",
-        image: "images/art/Main2.png"
+        image: "images/art/7.png"
     },
     {
         name: "Earth 3D",
         icon: "images/art/n2.jpg",
-        image: "images/art/icon1.png"
+        image: "images/art/8.png"
     },
     {
         name: "Bail",
         icon: "images/art/n2.jpg",
-        image: "images/art/1.jpg"
+        image: "images/art/9.jpg"
     },
     {
         name: "Kera",
         icon: "images/art/n2.jpg",
-        image: "images/art/4.jpg"
+        image: "images/art/a.jpg"
     },
     {
         name: "Halo",
         icon: "images/art/n2.jpg",
-        image: "images/art/7.jpg"
+        image: "images/art/b.jpg"
     },
     {
         name: "JDC",
         icon: "images/art/n2.jpg",
-        image: "images/art/10.jpg"
+        image: "images/art/c.jpg"
     },
     {
         name: "Squid",
         icon: "images/art/n2.jpg",
-        image: "images/art/13.jpg"
+        image: "images/art/d.jpg"
     },
     {
         name: "Project 11018",
         icon: "images/art/n2.jpg",
-        image: "images/art/14.jpg"
+        image: "images/art/e.jpg"
     },
     {
         name: "Cage",
         icon: "images/art/n2.jpg",
-        image: "images/art/cage.jpg"
+        image: "images/art/f.jpg"
     },
     {
         name: "Dref",
         icon: "images/art/n2.jpg",
-        image: "images/art/dec.jpg"
+        image: "images/art/f1.jpg"
     },
     {
         name: "Magnum",
         icon: "images/art/n2.jpg",
-        image: "images/art/mini.jpg",
+        image: "images/art/f2.jpg",
 
     },
     {
         name: "Gail",
         icon: "images/art/n2.jpg",
-        image: "images/art/rat.jpg"
+        image: "images/art/f3.jpg"
     },
     {
         name: "Sqliud",
         icon: "images/art/n2.jpg",
-        image: "images/art/sq.jpg"
+        image: "images/art/f4.jpg"
+    },
+    {
+        name: "JDChristo",
+        icon: "images/art/n2.jpg",
+        image: "images/art/f5.jpg"
     }
 ];
 
