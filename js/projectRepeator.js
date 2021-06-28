@@ -230,7 +230,7 @@ document.getElementById("section-others").innerHTML = `
 				</div>
 			</div>
 		</div>
-	</div>s
+	</div>
 `
 document.getElementById("section-labs").innerHTML = `
     ${labData.map(function (project) {
