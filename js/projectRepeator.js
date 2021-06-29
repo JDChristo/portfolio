@@ -156,7 +156,7 @@ document.getElementById("section-works").innerHTML = `
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading-white">
-					<h2>Made with Unity</h2>
+					<h2>Games</h2>
 				</div>
             </div>
             <div class="row work-cards">
@@ -192,27 +192,27 @@ document.getElementById("section-works").innerHTML = `
 		</div>
 	</div>
 `
-document.getElementById("section-labs").innerHTML = `
+/*document.getElementById("section-labs").innerHTML = `
     ${labData.map(function (project) {
     return `
         <div class="col-md-4 animate-box">
         <div class="post">
-		<div class="title-post">
-		<img src=${project.imageSrc} alt="">
-		</div>
-		<div class="descr">
+        <div class="title-post">
+        <img src=${project.imageSrc} alt="">
+        </div>
+        <div class="descr">
         <div class="descr-content">
-		<h1>${project.projectName}</h1>
+        <h1>${project.projectName}</h1>
         <p>${project.description}</p>
-		<div class="cont-infos">
-		<div class="toolUsed">
-		<span>${project.projectType}</span>
-		</div>
-		</div>
-		</div>
-		</div>
-		</div>
-		</div>
+        <div class="cont-infos">
+        <div class="toolUsed">
+        <span>${project.projectType}</span>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
         `
 }).join(' ')}
-`
+`*/
