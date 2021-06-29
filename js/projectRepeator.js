@@ -161,8 +161,7 @@ document.getElementById("section-works").innerHTML = `
             </div>
             <div class="row work-cards">
                 ${projectData.map(function (project) {
-    if (project.projectType == "Unity, C#") {
-        return `
+    return `
                     <div class="col-md-3 col-padding animate-box">
                     <div class="cards">
 				    <figure class="card">
@@ -179,56 +178,17 @@ document.getElementById("section-works").innerHTML = `
 			        </div>
 			        </div>
                     `
-    }
-}).join(' ')}
-				
-            </div>
-		</div>
-	</div>
-`
-document.getElementById("section-others").innerHTML = `
 
-<div id="fh5co-work" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading-white">
-					<h2>Others</h2>
-				</div>
-            </div>
-            <div class="row work-cards">
-                ${projectData.map(function (project) {
-    if (project.projectType !== "Unity, C#") {
-        return `
-                    <div class="col-md-3 col-padding animate-box">
-                    <div class="cards">
-				    <figure class="card">
-					<img src="${project.imageSrc}" />
-					
-					<figcaption>${project.projectName} 
-                    <p>${project.projectType} </p>
-                    <p>${project.description} </p>
-                    <a target="_blank" href="${project.projectLink}">
-                    <button><span>Play</span></button>
-                    </a>
-                    </figcaption>
-				    </figure>
-			        </div>
-			        </div>
-                    `
-    }
-    else {
-        return
-    }
 }).join(' ')}
 				
             </div>
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                    <p> <br> <br>
-                        <a target="_blank" href="https://jd-christo.itch.io/" class="btn btn-default btn-lg">More at Itch.io</a>
-					</p>
-				</div>
-			</div>
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <p> <br> <br>
+                    <a target="_blank" href="https://jd-christo.itch.io/" class="btn btn-default btn-lg">More at Itch.io</a>
+                </p>
+                </div>
+            </div>
 		</div>
 	</div>
 `
