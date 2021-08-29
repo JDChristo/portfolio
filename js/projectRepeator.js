@@ -1,12 +1,5 @@
 const projectData = [
     {
-        projectName: "Design Patterns",
-        projectType: "Study, C#",
-        imageSrc: "images/app/dp.jpg",
-        projectLink: "https://github.com/JDChristo/Design-Pattern-in-c-sharp",
-        description: " Git Repo for Design Patterns "
-    },
-    {
         projectName: "Tanks War",
         projectType: "Phaser 3, JS, Html, CSS",
         imageSrc: "images/app/tank.png",
@@ -103,8 +96,25 @@ const projectData = [
         imageSrc: "images/portfolio-1.jpg",
         projectLink: "https://jd-christo.itch.io/",
         description: "Starter Template"
+    },
+    {
+        projectName: "Design Patterns",
+        projectType: "Study, C#",
+        imageSrc: "images/app/dp.jpg",
+        projectLink: "https://github.com/JDChristo/Design-Pattern-in-c-sharp",
+        description: " Git Repo for Design Patterns "
     }
 ];
+const otherData = [
+    {
+        projectName: "Design Patterns",
+        projectType: "Study, C#",
+        imageSrc: "images/app/dp.jpg",
+        projectLink: "https://github.com/JDChristo/Design-Pattern-in-c-sharp",
+        description: " Git Repo for Design Patterns "
+    }
+];
+
 const labData = [
     {
         projectName: "Lazy Ham Name",
@@ -193,13 +203,14 @@ document.getElementById("section-works").innerHTML = `
 	</div>
 `
 /*document.getElementById("section-labs").innerHTML = `
-    ${labData.map(function (project) {
+    ${otherData.map(function (project) {
     return `
         <div class="col-md-4 animate-box">
         <div class="post">
         <div class="title-post">
         <img src=${project.imageSrc} alt="">
         </div>
+        <a href="${project.projectLink}">
         <div class="descr">
         <div class="descr-content">
         <h1>${project.projectName}</h1>
@@ -211,6 +222,7 @@ document.getElementById("section-works").innerHTML = `
         </div>
         </div>
         </div>
+        </a>
         </div>
         </div>
         `
