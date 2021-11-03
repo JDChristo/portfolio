@@ -195,7 +195,7 @@ document.getElementById("section-works").innerHTML = `
             <div class="row animate-box">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                 <p> <br> <br>
-                    <a target="_blank" href="https://jd-christo.itch.io/" class="btn btn-default btn-lg">More at Itch.io</a>
+                    <a target="_blank" href="https://jd-christo.itch.io/" class="btn btn-default btn-lg">All Games at Itch.io</a>
                 </p>
                 </div>
             </div>

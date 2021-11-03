@@ -1145,6 +1145,45 @@ input[type="text"] {
   text-decoration: none;
   outline: none;
 }
+/*---------------------------------------------------------*/
+
+.pdf {
+  position: fixed;
+  bottom: 140px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.pdf.active {
+  opacity: 1;
+  visibility: visible;
+}
+.pdf a {
+  width: 50px;
+  height: 50px;
+  display: table;
+  background: #d81617;
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.pdf a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.pdf a:hover, .pdf a:active, .pdf a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
 /*===============================================================*/
 .gototop {
   position: fixed;
