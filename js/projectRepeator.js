@@ -35,6 +35,13 @@ const projectData = [
         description: " Combine The Tiles And Eat Them, But Look Out For Void. Merge and feed on number blocks and increase your score."
     },
     {
+        projectName: "Boxx boii goes bbrrrrrrrrr!!!!",
+        projectType: "Godot, GDScript",
+        imageSrc: "images/app/box.PNG",
+        projectLink: "https://kangrew.itch.io/boxx-boii-goes-brrrrrrrrrrrr",
+        description: "Boxx boii goes bbrrrrrrrrr!!!! is a rhythm puzzle game in which the player controls the game solely using the space bar."
+    },
+    {
         projectName: "Dot in Black and White",
         projectType: "Unity, C#",
         imageSrc: "images/app/Tile.png",
